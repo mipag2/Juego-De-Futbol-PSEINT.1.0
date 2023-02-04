@@ -1,0 +1,1257 @@
+///USAR PERFIL QUE ESTA ANTES
+Algoritmo Juego_de_futbol_1_0
+	///Definir 
+	Definir tiro,opciones,Equipo Como Caracter
+	Definir Segund,liga,Eq Como Entero
+	
+	
+	
+	///Bienvenida
+	Escribir "Bienvenido al mundo del futbol"
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Limpiar Pantalla
+	///Hacer
+	
+	Hacer
+		
+		///Opciones
+		Escribir "Best Football 1.0"
+		Escribir "A. Partida Rapida"
+		Escribir "B. Torneo"
+		Escribir "C. Modo Carrera"
+		Escribir "D. Opciones"
+		Escribir "E. Salir"
+		Segund = 0
+		//	Escribir ""
+		///Leer 
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		Leer opciones
+		opciones = Mayusculas(opciones)
+		Segun opciones Hacer
+				////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			"A":
+				Liga = 0
+				Escribir "Ingrese la liga"
+				Escribir "1. Uefa Champions League"
+				Escribir "2. Selecciones nacionales"
+
+				
+				Leer Liga
+				Segun Liga Hacer
+					1:
+						Escribir "Elija un equipo"
+						Escribir "1. Paris Saint German"
+						Escribir "2. Manchester United"
+						Escribir "3. Liverpool Football Club"
+						Escribir "4. Manchester City"
+						Escribir "5. Chelsea"
+						Escribir "6. Juventus"
+						Escribir "7. Napoli"
+						Escribir "8. Inter de Milán"
+						Escribir "9. Borussia Dortmund"
+						Escribir "10. Benfica"
+						Escribir "11. Ajax"
+						Escribir "12. Tottenham"
+						Escribir "13. Olympique de Marsella"
+						Escribir "14. Sevilla FC"
+						Escribir "15. Sporting Lisboa"
+						Escribir "16. Dinamo Kiev"
+						Escribir "17. AS Mónaco"
+						Escribir "18. Real Madrid"
+						Escribir "19. Bayern Munich"
+						Escribir "20. Atlético de Madrid"
+						Escribir "21. Barcelona"
+						Leer Eq
+						Hacer
+							Si  Liga > 0 Y Liga <= 32 Entonces
+								eq = eq
+							SiNo
+								
+								Escribir "Ingrese un equipo valido"
+								Escribir "1. Paris Saint German"
+								Escribir "2. Manchester United"
+								Escribir "3. Liverpool Football Club"
+								Escribir "4. Manchester City"
+								Escribir "5. Chelsea"
+								Escribir "6. Juventus"
+								Escribir "7. Napoli"
+								Escribir "8. Inter de Milán"
+								Escribir "9. Borussia Dortmund"
+								Escribir "10. Benfica"
+								Escribir "11. Ajax"
+								Escribir "12. Tottenham"
+								Escribir "13. Olympique de Marsella"
+								Escribir "14. Sevilla FC"
+								Escribir "15. Sporting Lisboa"
+								Escribir "16. Dinamo Kiev"
+								Escribir "17. AS Mónaco"
+								Escribir "18. Real Madrid"
+								Escribir "19. Bayern Munich"
+								Escribir "20. Atlético de Madrid"
+								Escribir "21. Barcelona"
+								Leer Eq
+								
+							FinSi
+						Hasta Que Liga > 0 Y Liga <= 21
+						Champions(Eq,Liga)
+					2:
+						Escribir "Elija un equipo"
+						Escribir "1. Paises Bajos"
+						Escribir "2. Senegal"
+						Escribir "3. Ecuador"
+						Escribir "4. Catar"
+						Escribir "5. Inglaterra"
+						Escribir "6. Estados Unidos"
+						Escribir "7. Irán"
+						Escribir "8. Gales"
+						Escribir "9. Argentina"
+						Escribir "10. Polonia"
+						Escribir "11. México"
+						Escribir "12. Arabia Saudita"
+						Escribir "13. Francia"
+						Escribir "14. Australia"
+						Escribir "15. Túnez"
+						Escribir "16. Dinamarca"
+						Escribir "17. Japón"
+						Escribir "18. España"
+						Escribir "19. Alemania"
+						Escribir "20. Costa Rica"
+						Escribir "21. Marruecos"
+						Escribir "22. Croacia"
+						Escribir "23. Bélgica"
+						Escribir "24. Canadá"
+						Escribir "25. Brasil"
+						Escribir "26. Suiza"
+						Escribir "27. Camerún"
+						Escribir "28. Serbia"
+						Escribir "29. Portugal"
+						Escribir "30. Corea Del Sur"
+						Escribir "31. Uruguay"
+						Escribir "32. Ghana"
+						Leer Eq
+						
+						Hacer
+							Si  Liga > 0 Y Liga <= 32 Entonces
+								eq = eq
+								
+							SiNo
+								
+								Escribir "Ingrese un equipo valido"
+								Escribir "1. Paises Bajos"
+								Escribir "2. Senegal"
+								Escribir "3. Ecuador"
+								Escribir "4. Catar"
+								Escribir "5. Inglaterra"
+								Escribir "6. Estados Unidos"
+								Escribir "7. Irán"
+								Escribir "8. Gales"
+								Escribir "9. Argentina"
+								Escribir "10. Polonia"
+								Escribir "11. México"
+								Escribir "12. Arabia Saudita"
+								Escribir "13. Francia"
+								Escribir "14. Australia"
+								Escribir "15. Túnez"
+								Escribir "16. Dinamarca"
+								Escribir "17. Japón"
+								Escribir "18. España"
+								Escribir "19. Alemania"
+								Escribir "20. Costa Rica"
+								Escribir "21. Marruecos"
+								Escribir "22. Croacia"
+								Escribir "23. Bélgica"
+								Escribir "24. Canadá"
+								Escribir "25. Brasil"
+								Escribir "26. Suiza"
+								Escribir "27. Camerún"
+								Escribir "28. Serbia"
+								Escribir "29. Portugal"
+								Escribir "30. Corea Del Sur"
+								Escribir "31. Uruguay"
+								Escribir "32. Ghana"
+								Leer Eq
+//								Leer Eq
+								
+							FinSi
+						Hasta Que Liga > 0 Y Liga <= 32
+						Selec(Eq,Liga)
+				FinSegun
+			
+			"B":
+				Escribir "Proximamente"
+			"C":
+				Escribir "Proximamente"
+			"D":
+				Escribir "Proximamente"
+//				Limpiar Pantalla
+//				Escribir "Entrando a opciones"
+//				Hacer
+//					Esperar 0.5 Segundos
+//					Escribir Sin Saltar ". "
+//					Esperar 1 Segundos
+//					Segund = Segund + 1
+//					Si Segund = 3 Entonces
+//						Limpiar Pantalla
+//					FinSi
+//					
+//				Mientras Que Segund <> 6
+				Escribir ""
+				Escribir "Enter para continuar"
+				Esperar Tecla
+				Limpiar Pantalla
+		FinSegun
+	Mientras Que opciones <> "E"
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+FinAlgoritmo
+////CHANPIONS
+SubProceso Champions (Eq,Liga)
+	
+	//	Definir  Como Caracter
+	Definir i,j,l,matriz,num,tiro,ale,cont,n,goles,alea,contgoles,ene,r,s Como Entero
+	Definir a,b,c Como Entero
+	Definir llamada,partido,siu Como Logico
+	Definir nombreRival,enemigo,Equi,Equipo Como Caracter
+	Dimension matriz[3,3]
+	Dimension equi[4]
+	Dimension enemigo[4]
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	cont = 0
+	goles = 0
+	contgoles= 0
+	siu = Falso
+	n = Aleatorio(3,10)
+	alea = Aleatorio(1,10)
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	Segun Liga Hacer
+		1:
+			Hacer
+				ene = Aleatorio(1,22)
+				Segun Eq Hacer
+					1:
+						Equipo = "Paris Saint German"
+						Equi[0] = "Messi"
+						Equi[1] = "Verrati"
+						Equi[2] = "Sergio Ramos"
+						Equi[3] = "Donnarumma"
+					2:
+						Equipo = "Manchester United"
+						Equi[0] = "Garnacho"
+						Equi[1] = "Casemiro"
+						Equi[2] = "Lisandro Martinez"
+						Equi[3] = "De Gea"
+					3:
+						Equipo = "Liverpool Football Club"
+						Equi[0] = "Salah"
+						Equi[1] = "Fabinho"
+						Equi[2] = "Alexander-Arnold"
+						Equi[3] = "Alisson Becker"
+					4:
+						Equipo = "Manchester City"
+						Equi[0] = "Álvarez"
+						Equi[1] = "De Bruyne"
+						Equi[2] = "Aké"
+						Equi[3] = "Ederson"
+					5:
+						Equipo = "Chelsea"
+						Equi[0] = "Sterling"
+						Equi[1] = "Pulisic"
+						Equi[2] = "Thiago Silva"
+						Equi[3] = "Mendy"
+					6:
+						Equipo = "Juventus"
+						Equi[0] = "Chiesa"
+						Equi[1] = "Di María"
+						Equi[2] = "Alex Sandro"
+						Equi[3] = "Szczesny"
+					7:
+						Equipo = "Napoli"
+						Equi[0] = "Giovanni Simeone"
+						Equi[1] = "Ndombélé"
+						Equi[2] = "Giovanni Di Lorenzo"
+						Equi[3] = "Alex Meret"
+					8:
+						Equipo = "Inter de Milán"
+						Equi[0] = "Lautaro Martínez"
+						Equi[1] = "Mjitaryán"
+						Equi[2] = "Robin Gosens"
+						Equi[3] = "André Onana"
+					9:
+						Equipo = "Borussia Dortmund"
+						Equi[0] = "Moukoko"
+						Equi[1] = "Bellingham"
+						Equi[2] = "Süle"
+						Equi[3] = "Gregor Kobel"
+					10:
+						Equipo = "Benfica"
+						Equi[0] = "David Neres"
+						Equi[1] = "Enzo Fernández"
+						Equi[2] = "Otamendi"
+						Equi[3] = "Vlachodimos"
+					11:
+						Equipo = "Ajax"
+						Equi[0] = "Bergwijn"
+						Equi[1] = "Kudus"
+						Equi[2] = "Bassey"
+						Equi[3] = "Pasveer"
+					12:
+						Equipo = "Tottenham"
+						Equi[0] = "Son"
+						Equi[1] = "Bentancur"
+						Equi[2] = "Cutie Romero"
+						Equi[3] = "Hugo Lloris"
+					13:
+						Equipo = "Olympique de Marsella"
+						Equi[0] = "Alexis Sánchez"
+						Equi[1] = "Guendouzi"
+						Equi[2] = "Bailly"
+						Equi[3] = "Pau López"
+					14:
+						Equipo = "Sevilla FC"
+						Equi[0] = "Llorente"
+						Equi[1] = "Papu Gomez"
+						Equi[2] = "Marcos Acuña"
+						Equi[3] = "Bounou"
+						
+					15:
+						Equipo = "Sporting Lisboa"
+						Equi[0] = "Trincão"
+						Equi[1] = "Hidemasa Morita"
+						Equi[2] = "Coates"
+						Equi[3] = "Adán"
+					16:
+						Equipo = "Dinamo Kiev"
+						Equi[0] = "Kaheem Parris"
+						Equi[1] = "Shaparenko"
+						Equi[2] = "Tomasz Kedziora"
+						Equi[3] = "Bushchán"
+					17:
+						Equipo = "AS Mónaco"
+						Equi[0] = "Ben Yedder"
+						Equi[1] = "Minamino"
+						Equi[2] = "Axel Disasi"
+						Equi[3] = "Nübel"
+					18:
+						Equipo = "Real Madrid"
+						Equi[0] = "Benzema"
+						Equi[1] = "Modric"
+						Equi[2] = "E.Militão"
+						Equi[3] = "Courtois"
+					19:
+						Equipo = "Bayern Munich"
+						Equi[0] = "Sadio Mané"
+						Equi[1] = "Kimmich"
+						Equi[2] = "João Cancelo"
+						Equi[3] = "Neuer"
+					20:
+						Equipo = "Atlético de Madrid"
+						Equi[0] = "Ángel Correa"
+						Equi[1] = "De Paul"
+						Equi[2] = "Nahuel Molina"
+						Equi[3] = "Oblak"
+					21:
+						Equipo = "Barcelona"
+						Equi[0] = "Lewandowski"
+						Equi[1] = "Pedri"
+						Equi[2] = "Koundé"
+						Equi[3] = "Ter Stegen"
+					De Otro Modo:
+						Escribir "Ingrese una opcion valida"
+						
+				FinSegun
+				/////////////////////////////////////////////////////////////////////////////////////////////
+				Segun ene Hacer
+					1:
+						nombreRival = "Paris Saint German"
+						enemigo[0] = "Messi"
+						enemigo[1] = "Verrati"
+						enemigo[2] = "Sergio Ramos"
+						enemigo[3] = "Donnarumma"
+					2:
+						nombreRival = "Manchester United"
+						enemigo[0] = "Garnacho"
+						enemigo[1] = "Casemiro"
+						enemigo[2] = "Lisandro Martinez"
+						enemigo[3] = "De Gea"
+					3:
+						nombreRival = "Liverpool Football Club"
+						enemigo[0] = "Salah"
+						enemigo[1] = "Fabinho"
+						enemigo[2] = "Alexander-Arnold"
+						enemigo[3] = "Alisson Becker"
+					4:
+						nombreRival = "Manchester City"
+						enemigo[0] = "Álvarez"
+						enemigo[1] = "De Bruyne"
+						enemigo[2] = "Aké"
+						enemigo[3] = "Ederson"
+					5:
+						nombreRival = "Chelsea"
+						enemigo[0] = "Sterling"
+						enemigo[1] = "Pulisic"
+						enemigo[2] = "Thiago Silva"
+						enemigo[3] = "Mendy"
+					6:
+						nombreRival = "Juventus"
+						enemigo[0] = "Chiesa"
+						enemigo[1] = "Di María"
+						enemigo[2] = "Alex Sandro"
+						enemigo[3] = "Szczesny"
+					7:
+						nombreRival = "Napoli"
+						enemigo[0] = "Giovanni Simeone"
+						enemigo[1] = "Ndombélé"
+						enemigo[2] = "Giovanni Di Lorenzo"
+						enemigo[3] = "Alex Meret"
+					8:
+						nombreRival = "Inter de Milán"
+						enemigo[0] = "Lautaro Martínez"
+						enemigo[1] = "Mjitaryán"
+						enemigo[2] = "Robin Gosens"
+						enemigo[3] = "André Onana"
+					9:
+						nombreRival = "Borussia Dortmund"
+						enemigo[0] = "Moukoko"
+						enemigo[1] = "Bellingham"
+						enemigo[2] = "Süle"
+						enemigo[3] = "Gregor Kobel"
+					10:
+						nombreRival = "Benfica"
+						enemigo[0] = "David Neres"
+						enemigo[1] = "Enzo Fernández"
+						enemigo[2] = "Otamendi"
+						enemigo[3] = "Vlachodimos"
+					11:
+						nombreRival = "Ajax"
+						enemigo[0] = "Bergwijn"
+						enemigo[1] = "Kudus"
+						enemigo[2] = "Bassey"
+						enemigo[3] = "Pasveer"
+					12:
+						nombreRival = "Tottenham"
+						enemigo[0] = "Son"
+						enemigo[1] = "Bentancur"
+						enemigo[2] = "Cutie Romero"
+						enemigo[3] = "Hugo Lloris"
+					13:
+						nombreRival = "Olympique de Marsella"
+						enemigo[0] = "Alexis Sánchez"
+						enemigo[1] = "Guendouzi"
+						enemigo[2] = "Bailly"
+						enemigo[3] = "Pau López"
+					14:
+						nombreRival = "Sevilla FC"
+						enemigo[0] = "Llorente"
+						enemigo[1] = "Papu Gomez"
+						enemigo[2] = "Marcos Acuña"
+						enemigo[3] = "Bounou"
+						
+					15:
+						nombreRival = "Sporting Lisboa"
+						enemigo[0] = "Trincão"
+						enemigo[1] = "Hidemasa Morita"
+						enemigo[2] = "Coates"
+						enemigo[3] = "Adán"
+					16:
+						nombreRival = "Dinamo Kiev"
+						enemigo[0] = "Kaheem Parris"
+						enemigo[1] = "Shaparenko"
+						enemigo[2] = "Tomasz Kedziora"
+						enemigo[3] = "Bushchán"
+					17:
+						nombreRival = "AS Mónaco"
+						enemigo[0] = "Ben Yedder"
+						enemigo[1] = "Minamino"
+						enemigo[2] = "Axel Disasi"
+						enemigo[3] = "Nübel"
+					18:
+						nombreRival = "Real Madrid"
+						enemigo[0] = "Benzema"
+						enemigo[1] = "Modric"
+						enemigo[2] = "E.Militão"
+						enemigo[3] = "Courtois"
+					19:
+						nombreRival = "Bayern Munich"
+						enemigo[0] = "Sadio Mané"
+						enemigo[1] = "Kimmich"
+						enemigo[2] = "João Cancelo"
+						enemigo[3] = "Neuer"
+					20:
+						nombreRival = "Atlético de Madrid"
+						enemigo[0] = "Ángel Correa"
+						enemigo[1] = "De Paul"
+						enemigo[2] = "Nahuel Molina"
+						enemigo[3] = "Oblak"
+					21:
+						nombreRival = "Barcelona"
+						enemigo[0] = "Lewandowski"
+						enemigo[1] = "Pedri"
+						enemigo[2] = "Koundé"
+						enemigo[3] = "Ter Stegen"
+				FinSegun
+			Mientras Que Equipo = nombreRival
+			
+			
+		2:
+			
+	FinSegun
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	Escribir "Las pociciones son"
+	l=0
+
+		Para j = 0 Hasta 2
+			
+			
+			
+			l = l + 1
+			Escribir Sin Saltar l "  "
+			
+		FinPara
+
+	Escribir "Para patear se ingresa un numero 1(izquierda) 2(Centro) 3(Derecha)"
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Limpiar Pantalla
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	partido = Falso
+	Escribir "Esta por empezar el partido entre " Equipo " Y " nombreRival
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Hacer
+		Siu = Falso
+		llamada = Falso
+		l = 0
+		
+		Para i = 0 Hasta 20
+			
+			
+			Para j = 0 Hasta 98
+				Si i = 0 Entonces
+					//				matriz[i,j] = 
+					Escribir Sin Saltar "_"
+				SiNo
+					
+					Si j = 0 O J = 98  Entonces
+						Escribir Sin Saltar "|"
+					SiNo
+						Si j = 33 O j = 66 Entonces
+							Escribir Sin Saltar "|"
+						SiNo
+							Escribir Sin Saltar " "
+							
+						FinSi
+						
+					FinSi
+				FinSi
+				
+				
+				
+				
+			FinPara
+			Escribir ""
+		FinPara
+		
+		r = Aleatorio(0,2)
+		s = Aleatorio(1,2)
+		
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		Escribir "Se acerca el " Equipo " pase para " equi(r)  " Que buen pase !!!Puede patear¡¡¡"
+ 		
+		num = Aleatorio(1,3)
+		Leer tiro
+		Si tiro = num Entonces
+			Escribir "Ya le pego y GOOOOOOLLLLLLLL"
+			goles = goles + 1
+			cont = cont + 1
+		SiNo
+			ale = Aleatorio(1,2)
+			cont = cont + 1
+			Si ale = 1 Entonces
+				Escribir "La tapo el arquero"
+			SiNo
+				Escribir "Muy desviado salio ese tiro"
+			FinSi
+			Escribir ""
+			//			Escribir ""
+			
+		FinSi
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		a = Aleatorio(1,2)
+		b = Aleatorio(1,4)
+		c =  Aleatorio(1,2)
+		Si a = 1 Entonces
+			Escribir "Se viene el " nombreRival
+			Segun b Hacer
+				1:
+					///Contra 1
+					Escribir "Y arranca la contra de la mano de " enemigo[0]
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "Pase para " enemigo[b]
+						Escribir "La pateo y gol Goooooooooool de " nombreRival
+						siu = Verdadero
+					SiNo
+						Escribir "Justito llega el corte"
+						siu = Falso
+					FinSi
+				2:
+					///Contra 2
+					Escribir "Y arranca la contra de la mano de " enemigo[1]
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "Pase para " enemigo[b]
+						Escribir "La pateo y gol Goooooooooool de " nombreRival
+						siu = Verdadero
+					SiNo
+						Escribir "Justito llega el corte"
+						siu = Falso
+					FinSi
+				3:
+					///Contra 3
+					
+					Escribir "Y arranca la contra de la mano de " enemigo[2]
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "Pase para " enemigo[b]
+						Escribir "La pateo y gol Goooooooooool de " nombreRival
+						siu = Verdadero
+					SiNo
+						Escribir "Justito llega el corte"
+						siu = Falso
+					FinSi
+					
+				4:
+					///Contra 4
+					
+					Escribir enemigo[3] " saca hasta el area" 
+					
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "La pateo y gol Goooooooooool de " enemigo[b]
+						siu = Verdadero
+					SiNo
+						Escribir "Oportinidad!!!!!! Justito llega el corte"
+						siu = Falso
+					FinSi
+					
+			FinSegun
+			
+			
+		SiNo
+			Escribir nombreRival " No puede profundizar"
+		FinSi
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		Si siu = Verdadero 
+			contgoles = contgoles + 1
+		FinSi
+		
+		Escribir "Enter para continuar"
+		Esperar Tecla
+		Limpiar Pantalla
+		
+		Escribir Equipo " " goles " : " nombreRival " " contgoles
+		
+		Si cont = n  Entonces
+			partido = Verdadero
+		FinSi
+	Mientras Que partido = Falso
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	Escribir Dato1 " " goles " : " nombreRival " " contgoles
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Limpiar Pantalla
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+FinSubProceso
+
+///MUNDIAL
+
+SubProceso Selec (Eq,Liga)
+	
+	//	Definir  Como Caracter
+	Definir i,j,l,matriz,num,tiro,ale,cont,n,goles,alea,contgoles,ene,r,s Como Entero
+	Definir a,b,c Como Entero
+	Definir llamada,partido,siu Como Logico
+	Definir nombreRival,enemigo,Equi,Equipo Como Caracter
+	Dimension matriz[3,3]
+	Dimension equi[4]
+	Dimension enemigo[4]
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	cont = 0
+	goles = 0
+	contgoles= 0
+	siu = Falso
+	n = Aleatorio(3,10)
+	alea = Aleatorio(1,10)
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+			Hacer
+				ene = Aleatorio(1,32)
+				Segun Eq Hacer
+					1:
+						Equipo = "Paises Bajos"
+						Equi[0] = "Gakpo"
+						Equi[1] = "Simons"
+						Equi[2] = "Van Dijk"
+						Equi[3] = "Pasveer"
+					2:
+						Equipo = "Senegal"
+						Equi[0] = "Sarr"
+						Equi[1] = "Gana Gueye"
+						Equi[2] = "Koulibaly"
+						Equi[3] = "Mendy"
+					3:
+						Equipo = "Ecuador"
+						Equi[0] = "Valencia"
+						Equi[1] = "Caicedo"
+						Equi[2] = "Hincapié"
+						Equi[3] = "Galíndez"
+					4:
+						Equipo = "Catar"
+						Equi[0] = "Ali"
+						Equi[1] = "Boudiaf"
+						Equi[2] = "Ró-Ró"
+						Equi[3] = "Al Sheeb"
+					5:
+						Equipo = "Inglaterra"
+						Equi[0] = "Kane"
+						Equi[1] = "Foden"
+						Equi[2] = "Alexander-Arnold"
+						Equi[3] = "Pickford"
+					6:
+						Equipo = "Estados Unidos"
+						Equi[0] = "Ferreira"
+						Equi[1] = "Pulisic"
+						Equi[2] = "Dest"
+						Equi[3] = "Turner"
+					7:
+						Equipo = "Irán"
+						Equi[0] = "Azmoun"
+						Equi[1] = "Hajsafi"
+						Equi[2] = "Rezaeian"
+						Equi[3] = "Beiranvand"
+					8:
+						Equipo = "Gales"
+						Equi[0] = "James"
+						Equi[1] = "Ramsey"
+						Equi[2] = "Neco Williams"
+						Equi[3] = "Hennessey"
+					9:
+						Equipo = "Argentina"
+						Equi[0] = "Messi"
+						Equi[1] = "Enzo Fernández"
+						Equi[2] = "Cuti Romero"
+						Equi[3] = "Dibu Martínez"
+					10:
+						Equipo = "Polonia"
+						Equi[0] = "Lewandowski"
+						Equi[1] = "Zielinski"
+						Equi[2] = "Cash"
+						Equi[3] = "Szczesny"
+					11:
+						Equipo = "México"
+						Equi[0] = "Jiménez"
+						Equi[1] = "Guardado"
+						Equi[2] = "Lozano"
+						Equi[3] = "Ochoa"
+					12:
+						Equipo = "Arabia Saudita"
+						Equi[0] = "Al-Shehri"
+						Equi[1] = "Al-Dawsari"
+						Equi[2] = "Al-Shahrani"
+						Equi[3] = "Al-Owais"
+					13:
+						Equipo = "Francia"
+						Equi[0] = "Griezmann"
+						Equi[1] = "Tchouaméni"
+						Equi[2] = "Bailly"
+						Equi[3] = "Lloris"
+					14:
+						Equipo = "Australia"
+						Equi[0] = "Kuol"
+						Equi[1] = "Mooy"
+						Equi[2] = "Souttar"
+						Equi[3] = "Ryan"
+						
+					15:
+						Equipo = "Túnez"
+						Equi[0] = "Khazri"
+						Equi[1] = "Mejbri"
+						Equi[2] = "Talbi"
+						Equi[3] = "Dahmen"
+					16:
+						Equipo = "Dinamarca"
+						Equi[0] = "Dolberg"
+						Equi[1] = "Eriksen"
+						Equi[2] = "Kjær"
+						Equi[3] = "Schmeichel"
+					17:
+						Equipo = "Japón"
+						Equi[0] = "Ito"
+						Equi[1] = "Minamino"
+						Equi[2] = "Tomiyasu"
+						Equi[3] = "Schmidt"
+					18:
+						Equipo = "España"
+						Equi[0] = "Ansu Fati"
+						Equi[1] = "Gavi"
+						Equi[2] = "Guillamón"
+						Equi[3] = "Unai Simón"
+					19:
+						Equipo = "Alemania"
+						Equi[0] = "Sané"
+						Equi[1] = "Havertz"
+						Equi[2] = "Rüdiger"
+						Equi[3] = "Neuer"
+					20:
+						Equipo = "Costa Rica"
+						Equi[0] = "Campbell"
+						Equi[1] = "Aguilera"
+						Equi[2] = "Fuller"
+						Equi[3] = "Keylor Navas"
+					21:
+						Equipo = "Marruecos"
+						Equi[0] = "Boufal"
+						Equi[1] = "Ziyech"
+						Equi[2] = "Hakimi"
+						Equi[3] = "Bounou"
+					22:
+						Equipo = "Croacia"
+						Equi[0] = "Petkovic"
+						Equi[1] = "Luka Modric"
+						Equi[2] = "Gvardiol"
+						Equi[3] = "Livakovic"
+					23:
+						Equipo = "Bélgica"
+						Equi[0] = "Hazard"
+						Equi[1] = "De Bruyne"
+						Equi[2] = "Vertonghen"
+						Equi[3] = "Courtois"
+					24:
+						Equipo = "Canadá"
+						Equi[0] = "Davies"
+						Equi[1] = "Koné"
+						Equi[2] = "Cavallini"
+						Equi[3] = "Borjan"
+					25:
+						Equipo = "Brazil"
+						Equi[0] = "Neymar"
+						Equi[1] = "Casemiro"
+						Equi[2] = "Dani Alves"
+						Equi[3] = "Alisson Becker"
+					26:
+						Equipo = "Suiza"
+						Equi[0] = "Embolo"
+						Equi[1] = "Shaqiri"
+						Equi[2] = "Akanji"
+						Equi[3] = "Sommer"
+					27:
+						Equipo = "Camerún"
+						Equi[0] = "Choupo-Moting"
+						Equi[1] = "Zambo Anguissa"
+						Equi[2] = "Tolo"
+						Equi[3] = "Onana"
+					28:
+						Equipo = "Serbia"
+						Equi[0] = "Vlahovic"
+						Equi[1] = "Milinkovic-Savic"
+						Equi[2] = "Mitrovic"
+						Equi[3] = "Milinkovic-Savic"
+					29:
+						Equipo = "Portugal"
+						Equi[0] = "Cristiano Ronaldo"
+						Equi[1] = "Bruno Fernandes"
+						Equi[2] = "Pepe"
+						Equi[3] = "Diogo Costa"
+					30:
+						Equipo = "Corea Del Sur"
+						Equi[0] = "Heung-Min Son"
+						Equi[1] = "Kang-in"
+						Equi[2] = "Min-jae"
+						Equi[3] = "Seung-Gyu"
+					31:
+						Equipo = "Uruguay"
+						Equi[0] = "Luis Suárez"
+						Equi[1] = "Valverde"
+						Equi[2] = "Araújo"
+						Equi[3] = "Muslera"
+					32:
+						Equipo = "Ghana"
+						Equi[0] = "Williams"
+						Equi[1] = "Partey"
+						Equi[2] = "Lamptey"
+						Equi[3] = "Ati-Zigi"
+					De Otro Modo:
+						Escribir "Ingrese una opcion valida"
+						
+				FinSegun
+				/////////////////////////////////////////////////////////////////////////////////////////////
+				Segun n Hacer
+					1:
+						nombreRival = "Paises Bajos"
+						enemigo[0] = "Gakpo"
+						enemigo[1] = "Simons"
+						enemigo[2] = "Van Dijk"
+						enemigo[3] = "Pasveer"
+					2:
+						nombreRival = "Senegal"
+						enemigo[0] = "Sarr"
+						enemigo[1] = "Gana Gueye"
+						enemigo[2] = "Koulibaly"
+						enemigo[3] = "Mendy"
+					3:
+						nombreRival = "Ecuador"
+						enemigo[0] = "Valencia"
+						enemigo[1] = "Caicedo"
+						enemigo[2] = "Hincapié"
+						enemigo[3] = "Galíndez"
+					4:
+						nombreRival = "Catar"
+						enemigo[0] = "Ali"
+						enemigo[1] = "Boudiaf"
+						enemigo[2] = "Ró-Ró"
+						enemigo[3] = "Al Sheeb"
+					5:
+						nombreRival = "Inglaterra"
+						enemigo[0] = "Kane"
+						enemigo[1] = "Foden"
+						enemigo[2] = "Alexander-Arnold"
+						enemigo[3] = "Pickford"
+					6:
+						nombreRival = "Estados Unidos"
+						enemigo[0] = "Ferreira"
+						enemigo[1] = "Pulisic"
+						enemigo[2] = "Dest"
+						enemigo[3] = "Turner"
+					7:
+						nombreRival = "Irán"
+						enemigo[0] = "Azmoun"
+						enemigo[1] = "Hajsafi"
+						enemigo[2] = "Rezaeian"
+						enemigo[3] = "Beiranvand"
+					8:
+						nombreRival = "Gales"
+						enemigo[0] = "James"
+						enemigo[1] = "Ramsey"
+						enemigo[2] = "Neco Williams"
+						enemigo[3] = "Hennessey"
+					9:
+						nombreRival = "Argentina"
+						enemigo[0] = "Messi"
+						enemigo[1] = "Enzo Fernández"
+						enemigo[2] = "Cuti Romero"
+						enemigo[3] = "Dibu Martínez"
+					10:
+						nombreRival = "Polonia"
+						enemigo[0] = "Lewandowski"
+						enemigo[1] = "Zielinski"
+						enemigo[2] = "Cash"
+						enemigo[3] = "Szczesny"
+					11:
+						nombreRival = "Mexico"
+						enemigo[0] = "Jiménez"
+						enemigo[1] = "Guardado"
+						enemigo[2] = "Lozano"
+						enemigo[3] = "Ochoa"
+					12:
+						nombreRival = "Arabia Saudita"
+						enemigo[0] = "Al-Shehri"
+						enemigo[1] = "Al-Dawsari"
+						enemigo[2] = "Al-Shahrani"
+						enemigo[3] = "Al-Owais"
+					13:
+						nombreRival = "Francia"
+						enemigo[0] = "Griezmann"
+						enemigo[1] = "Tchouaméni"
+						enemigo[2] = "Bailly"
+						enemigo[3] = "Lloris"
+					14:
+						nombreRival = "Australia"
+						enemigo[0] = "Kuol"
+						enemigo[1] = "Mooy"
+						enemigo[2] = "Souttar"
+						enemigo[3] = "Ryan"
+						
+					15:
+						nombreRival = "Túnez"
+						enemigo[0] = "Khazri"
+						enemigo[1] = "Mejbri"
+						enemigo[2] = "Talbi"
+						enemigo[3] = "Dahmen"
+					16:
+						nombreRival = "Dinamarca"
+						enemigo[0] = "Dolberg"
+						enemigo[1] = "Eriksen"
+						enemigo[2] = "Kjær"
+						enemigo[3] = "Schmeichel"
+					17:
+						Equipo = "Japon"
+						enemigo[0] = "Ito"
+						enemigo[1] = "Minamino"
+						enemigo[2] = "Tomiyasu"
+						enemigo[3] = "Schmidt"
+					18:
+						nombreRival = "España"
+						enemigo[0] = "Ansu Fati"
+						enemigo[1] = "Gavi"
+						enemigo[2] = "Guillamón"
+						enemigo[3] = "Unai Simón"
+					19:
+						nombreRival = "Alemania"
+						enemigo[0] = "Sané"
+						enemigo[1] = "Havertz"
+						enemigo[2] = "Rüdiger"
+						enemigo[3] = "Neuer"
+					20:
+						nombreRival = "Costa Rica"
+						enemigo[0] = "Campbell"
+						enemigo[1] = "Aguilera"
+						enemigo[2] = "Fuller"
+						enemigo[3] = "Keylor Navas"
+					21:
+						nombreRival = "Marruecos"
+						enemigo[0] = "Boufal"
+						enemigo[1] = "Ziyech"
+						enemigo[2] = "Hakimi"
+						enemigo[3] = "Bounou"
+					22:
+						nombreRival = "Croacia"
+						enemigo[0] = "Petkovic"
+						enemigo[1] = "Luka Modric"
+						enemigo[2] = "Gvardiol"
+						enemigo[3] = "Livakovic"
+					23:
+						nombreRival = "Belgica"
+						enemigo[0] = "Hazard"
+						enemigo[1] = "De Bruyne"
+						enemigo[2] = "Vertonghen"
+						enemigo[3] = "Courtois"
+					24:
+						nombreRival = "Canada"
+						enemigo[0] = "Davies"
+						enemigo[1] = "Koné"
+						enemigo[2] = "Cavallini"
+						enemigo[3] = "Borjan"
+					25:
+						nombreRival = "Brazil"
+						enemigo[0] = "Neymar"
+						enemigo[1] = "Casemiro"
+						enemigo[2] = "Dani Alves"
+						enemigo[3] = "Alisson Becker"
+					26:
+						nombreRival = "Suiza"
+						enemigo[0] = "Embolo"
+						enemigo[1] = "Shaqiri"
+						enemigo[2] = "Akanji"
+						enemigo[3] = "Sommer"
+					27:
+						nombreRival = "Camerun"
+						enemigo[0] = "Choupo-Moting"
+						enemigo[1] = "Zambo Anguissa"
+						enemigo[2] = "Tolo"
+						enemigo[3] = "Onana"
+					28:
+						nombreRival = "Serbia"
+						enemigo[0] = "Vlahovic"
+						enemigo[1] = "Milinkovic-Savic"
+						enemigo[2] = "Mitrovic"
+						enemigo[3] = "Milinkovic-Savic"
+					29:
+						nombreRival = "Portugal"
+						enemigo[0] = "Cristiano Ronaldo"
+						enemigo[1] = "Bruno Fernandes"
+						enemigo[2] = "Pepe"
+						enemigo[3] = "Diogo Costa"
+					30:
+						nombreRival = "Corea Del Sur"
+						enemigo[0] = "Heung-Min Son"
+						enemigo[1] = "Kang-in"
+						enemigo[2] = "Min-jae"
+						enemigo[3] = "Seung-Gyu"
+					31:
+						nombreRival = "Uruguay"
+						enemigo[0] = "Luis Suárez"
+						enemigo[1] = "Valverde"
+						enemigo[2] = "Araújo"
+						enemigo[3] = "Muslera"
+					32:
+						nombreRival = "Ghana"
+						enemigo[0] = "Williams"
+						enemigo[1] = "Partey"
+						enemigo[2] = "Lamptey"
+						enemigo[3] = "Ati-Zigi"
+				FinSegun
+			Mientras Que Equipo = nombreRival
+			
+			
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	Escribir "Las pociciones son"
+	l=0
+	
+	Para j = 0 Hasta 2
+		
+		
+		
+		l = l + 1
+		Escribir Sin Saltar l "  "
+		
+	FinPara
+	
+	Escribir "Para patear se ingresa un numero 1(izquierda) 2(Centro) 3(Derecha)"
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Limpiar Pantalla
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	partido = Falso
+	Escribir "Esta por empezar el partido entre " Equipo " Y " nombreRival
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Hacer
+		Siu = Falso
+		llamada = Falso
+		l = 0
+		
+		Para i = 0 Hasta 20
+			
+			
+			Para j = 0 Hasta 98
+				Si i = 0 Entonces
+					//				matriz[i,j] = 
+					Escribir Sin Saltar "_"
+				SiNo
+					
+					Si j = 0 O J = 98  Entonces
+						Escribir Sin Saltar "|"
+					SiNo
+						Si j = 33 O j = 66 Entonces
+							Escribir Sin Saltar "|"
+						SiNo
+							Escribir Sin Saltar " "
+							
+						FinSi
+						
+					FinSi
+				FinSi
+				
+				
+				
+				
+			FinPara
+			Escribir ""
+		FinPara
+		
+		r = Aleatorio(0,2)
+		s = Aleatorio(1,2)
+		
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		Escribir "Se acerca el " Equipo " pase para " equi(r)  " Que buen pase !!!Puede patear¡¡¡"
+ 		
+		num = Aleatorio(1,3)
+		Leer tiro
+		Si tiro = num Entonces
+			Escribir "Ya le pego y GOOOOOOLLLLLLLL"
+			goles = goles + 1
+			cont = cont + 1
+		SiNo
+			ale = Aleatorio(1,2)
+			cont = cont + 1
+			Si ale = 1 Entonces
+				Escribir "La tapo el arquero"
+			SiNo
+				Escribir "Muy desviado salio ese tiro"
+			FinSi
+			Escribir ""
+			//			Escribir ""
+			
+		FinSi
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		a = Aleatorio(1,2)
+		b = Aleatorio(1,4)
+		c =  Aleatorio(1,2)
+		Si a = 1 Entonces
+			Escribir "Se viene el " nombreRival
+			Segun b Hacer
+				1:
+					///Contra 1
+					Escribir "Y arranca la contra de la mano de " enemigo[0]
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "Pase para " enemigo[b]
+						Escribir "La pateo y gol Goooooooooool de " nombreRival
+						siu = Verdadero
+					SiNo
+						Escribir "Justito llega el corte"
+						siu = Falso
+					FinSi
+				2:
+					///Contra 2
+					Escribir "Y arranca la contra de la mano de " enemigo[1]
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "Pase para " enemigo[b]
+						Escribir "La pateo y gol Goooooooooool de " nombreRival
+						siu = Verdadero
+					SiNo
+						Escribir "Justito llega el corte"
+						siu = Falso
+					FinSi
+				3:
+					///Contra 3
+					
+					Escribir "Y arranca la contra de la mano de " enemigo[2]
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "Pase para " enemigo[b]
+						Escribir "La pateo y gol Goooooooooool de " nombreRival
+						siu = Verdadero
+					SiNo
+						Escribir "Justito llega el corte"
+						siu = Falso
+					FinSi
+					
+				4:
+					///Contra 4
+					
+					Escribir enemigo[3] " saca hasta el area" 
+					
+					Si c = 1 Entonces
+						b = Aleatorio(0,2)
+						Escribir "La pateo y gol Goooooooooool de " enemigo[b]
+						siu = Verdadero
+					SiNo
+						Escribir "Oportinidad!!!!!! Justito llega el corte"
+						siu = Falso
+					FinSi
+					
+			FinSegun
+			
+			
+		SiNo
+			Escribir nombreRival " No puede profundizar"
+		FinSi
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		Si siu = Verdadero 
+			contgoles = contgoles + 1
+		FinSi
+		
+		Escribir "Enter para continuar"
+		Esperar Tecla
+		Limpiar Pantalla
+		
+		Escribir Equipo " " goles " : " nombreRival " " contgoles
+		
+		Si cont = n  Entonces
+			partido = Verdadero
+		FinSi
+	Mientras Que partido = Falso
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//	Escribir Dato1 " " goles " : " nombreRival " " contgoles
+	Escribir "Tecla para continuar"
+	Esperar Tecla
+	Limpiar Pantalla
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////
+FinSubProceso
